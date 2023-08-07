@@ -1,18 +1,19 @@
-@charset "UTF-8";
+/*@charset "UTF-8";
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100vh;
     width: 100vw;
     background-color: black;
 }
 
-body{
+body {
     background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
@@ -21,7 +22,7 @@ body{
 main {
     position: relative;
     height: 100vh;
-    
+
 }
 
 section#telefone {
@@ -41,4 +42,92 @@ iframe#tela {
     left: 22px;
     width: 269px;
     height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.651);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform .5s, border .7s;
+}*/
+@charset "UTF-8";
+
+/* Defina valores padrão para margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos globais para html e body */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+/* Estilos para o corpo */
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilos para a seção principal */
+main {
+    position: relative;
+    height: 100vh;
+}
+
+/* Estilos para o telefone */
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
+
+/* Estilos para a tela do telefone */
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+
+/* Estilos para as redes sociais */
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.651);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform 0.5s, border 0.7s;
 }
